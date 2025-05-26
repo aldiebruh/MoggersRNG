@@ -203,24 +203,6 @@ class MainMenu(Screen):
 
         self.spin_sound = SoundLoader.load("audio/common_sound.wav")
         self.rare_sound = SoundLoader.load("audio/rare_sound.wav")
-        self.special_sound = SoundLoader.load("audio/special_sound.wav")
-        self.special_sound2 = SoundLoader.load("audio/special_sound2.wav")
-        self.special_sound3 = SoundLoader.load("audio/special_sound3.wav")
-        self.special_sound4 = SoundLoader.load("audio/special_sound4.wav")
-        self.special_sound5 = SoundLoader.load("audio/special_sound5.wav")
-        self.special_sound6 = SoundLoader.load("audio/special_sound6.wav")
-        self.special_sound7 = SoundLoader.load("audio/special_sound7.wav")
-        self.special_sound8 = SoundLoader.load("audio/special_sound8.wav")
-        self.special_sound9 = SoundLoader.load("audio/special_sound9.wav")
-        self.special_sound10 = SoundLoader.load("audio/special_sound10.wav")
-        self.special_sound11 = SoundLoader.load("audio/special_sound11.wav")
-        self.special_sound12 = SoundLoader.load("audio/special_sound12.wav")
-        self.special_sound13 = SoundLoader.load("audio/special_sound13.wav")
-        self.special_sound14 = SoundLoader.load("audio/special_sound14.wav")
-        self.special_sound15 = SoundLoader.load("audio/special_sound15.wav")
-        self.special_sound16 = SoundLoader.load("audio/special_sound16.wav")
-        self.special_sound17 = SoundLoader.load("audio/special_sound17.wav")
-        self.special_sound18 = SoundLoader.load("audio/special_sound18.wav")
         self.upgrade_sound = SoundLoader.load("audio/upgrade_sound.wav")
         self.bg_music = SoundLoader.load("audio/background.wav")
         if self.bg_music:
@@ -506,44 +488,7 @@ class SpinScreen(Screen):
         self.store_btn.opacity = 1
         self.store_btn.disabled = False
 
-        # Play special or rare/common sound
-        if title == "Xi Jinping" and self.special_sound:
-            self.special_sound.play()
-        elif title == "Rodrigo Roa Duterte" and self.special2_sound:
-            self.special2_sound.play()
-        elif title == "xQc" and self.special3_sound:
-            self.special3_sound.play()
-        elif title == "Hev Abi" and self.special4_sound:
-            self.special4_sound.play()
-        elif title == "Drake" and self.special5_sound:
-            self.special5_sound.play()
-        elif title in ["Kumalala", "Savesta"] and self.special6_sound:
-            self.special6_sound.play()
-        elif title == "Minecraft Steve" and self.special7_sound:
-            self.special7_sound.play()
-        elif title == "Samuel Ernest Obregon Music Video" and self.special8_sound:
-            self.special8_sound.play()
-        elif title == "Fuego Fredrinn Build" and self.special9_sound:
-            self.special9_sound.play()
-        elif title == "Dreamybull PLUS ULTRA" and self.special10_sound:
-            self.special10_sound.play()
-        elif title == "Malupiton" and self.special11_sound:
-            self.special11_sound.play()
-        elif title == "Flight Reacts" and self.special12_sound:
-            self.special12_sound.play()
-        elif title == "LEBRON RAYMONE JAMES" and self.special13_sound:
-            self.special13_sound.play()
-        elif title == "F Student" and self.special14_sound:
-            self.special14_sound.play()
-        elif title == "Goat of Mogging" and self.special15_sound:
-            self.special15_sound.play()
-        elif title == "Skylar White Yo" and self.special16_sound:
-            self.special16_sound.play()
-        elif title == "YES KING" and self.special17_sound:
-            self.special17_sound.play()
-        elif title == "Masked Hokage" and self.special18_sound:
-            self.special18_sound.play()
-        elif base_prob < 1 / 999 and self.rare_sound:
+        if base_prob < 1 / 999
             self.rare_sound.play()
         elif self.spin_sound:
             self.spin_sound.play()
